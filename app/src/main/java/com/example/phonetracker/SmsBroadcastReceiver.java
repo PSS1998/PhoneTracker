@@ -13,7 +13,6 @@ public class SmsBroadcastReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        System.out.println("sms recived");
         if (intent == null
                 || !Telephony.Sms.Intents.SMS_RECEIVED_ACTION.equals(intent.getAction())) {
             return;
@@ -39,6 +38,7 @@ public class SmsBroadcastReceiver extends BroadcastReceiver {
                     MainActivity.disableActivity(context);
                     LogAlarmReceiver.startAlarm(context, sender);
                     prefs.setReportReceiver(sender);
+
                     abort = true;
 
                     break;

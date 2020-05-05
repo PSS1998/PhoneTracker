@@ -18,7 +18,6 @@ public class LogAlarmReceiver extends BroadcastReceiver {
     private static int ALARM_TIME = 60 * 5 * 1000;
 
     public static synchronized void startAlarm(Context context, String phoneNumber) {
-        System.out.println("alarm start");
         Intent intent = new Intent();
         intent.setAction(ACTION_TRIGGER_ALARM);
         intent.putExtra(EXTRA_PHONE_NUMBER, phoneNumber);
@@ -32,7 +31,6 @@ public class LogAlarmReceiver extends BroadcastReceiver {
     }
 
     public static synchronized void enqueueAlarm(Context context, String phoneNumber) {
-        System.out.println("alarm enqueue");
         Intent intent = new Intent();
         intent.setAction(ACTION_TRIGGER_ALARM);
         intent.putExtra(EXTRA_PHONE_NUMBER, phoneNumber);
@@ -58,7 +56,6 @@ public class LogAlarmReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        System.out.println("sms report");
         if (intent == null || !ACTION_TRIGGER_ALARM.equals(intent.getAction())) {
             return;
         }
