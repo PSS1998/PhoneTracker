@@ -23,8 +23,8 @@ In order to find cellular tower location based on information use the following 
 http://mobile.maps.yandex.net/cellid_location/?&cellid={}&operatorid={}&countrycode={}&lac={}<br/>
 the cell tower information recived will be in following format:<br/>
 type:signalStrenght:cellid:countrycode:operatorid:lac<br/>
-To get the lat and lng on google maps use the following format:
-https://maps.google.com/?q={lat},{lng}
+To get the lat and lng on google maps use the following format:<br/>
+https://maps.google.com/?q={lat},{lng}<br/>
 
 
 
