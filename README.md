@@ -19,10 +19,12 @@ Icon: https://www.iconfinder.com/icons/283048/google_maps_locate_location_map_ma
 
 Cellular Tower
 --------------
-In order to find cellular tower location based on information use the following API:
-http://mobile.maps.yandex.net/cellid_location/?&cellid={}&operatorid={}&countrycode={}&lac={}
-the cell tower information recived will be in following format:
-type:signalStrenght:cellid:countrycode:operatorid:lac
+In order to find cellular tower location based on information use the following API:<br/>
+http://mobile.maps.yandex.net/cellid_location/?&cellid={}&operatorid={}&countrycode={}&lac={}<br/>
+the cell tower information recived will be in following format:<br/>
+type:signalStrenght:cellid:countrycode:operatorid:lac<br/>
+To get the lat and lng on google maps use the following format:
+https://maps.google.com/?q={lat},{lng}
 
 
 
