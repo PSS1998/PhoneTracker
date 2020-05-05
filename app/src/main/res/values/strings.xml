@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Phone Tracker</string>
+
+    <string name="enter_password_start">Enter password to start tracking</string>
+    <string name="enter_password_stop">Enter password to stop tracking</string>
+
+    <string name="report_text">Phone location is: lat %1$s, lng %2$s</string>
+</resources>
